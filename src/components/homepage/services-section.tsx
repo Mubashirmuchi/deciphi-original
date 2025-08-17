@@ -4,7 +4,7 @@ import Grid  from "../grid";
 
 const Services = () => {
   return (
-    <div className="relative  max-w-7xl mx-auto flex flex-col gap-5 w-full items-center justify-center bg-white ">
+    <section className="relative  flex flex-col gap-5 w-full items-center justify-center bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* dark:bg-black */}
       <div
         className={cn(
@@ -23,16 +23,14 @@ const Services = () => {
         className="border border-black/10 relative bg-white"
       >
         <div className="bg-green-600 w-2 h-2 rounded-full mr-2 "></div>
-        About Us
+       services
       </Button>
       <h2 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rethink font-medium leading-tight ">
         <span className=" p-2 mr-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rethink font-medium leading-tight  bg-[#E85744] text-white w-fit">
           Security{" "}
         </span>
         That Fits
-        {/* <h2 className="">
-          Deciphi.
-        </h2> */}
+      
         <br />
       </h2>
 
@@ -42,7 +40,7 @@ const Services = () => {
         ensuring resilience and seamless operations without missing a beat.
       </p>
       <Grid  />
-    </div>
+    </section>
   );
 };
 

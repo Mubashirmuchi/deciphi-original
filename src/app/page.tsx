@@ -4,6 +4,7 @@ import ServicesSection from "@/components/homepage/services-section";
 import ChooseUsSection from "@/components/homepage/why-choose-us-section";
 import Solutions from "@/components/homepage/solutions-section";
 import { Metadata } from "next";
+import BlogSection from "@/components/homepage/blog-section";
 
 export const metadata: Metadata = {
   title: "Deciphi Cybersecurity | Protecting Businesses in Qatar",
@@ -54,6 +55,7 @@ export default function Home() {
       <ServicesSection />
       <ChooseUsSection />
       <Solutions />
+      <BlogSection />
     </main>
   );
 }

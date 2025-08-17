@@ -136,7 +136,7 @@ const Solutions = () => {
             </div>
             {/* </div> */}
           </div>
-          <div className="order-2 lg:order-2 space-y-6 relative">
+          <div className="order-2 lg:order-2 space-y-6 relative w-full max-w-md mx-auto lg:mx-0 lg:ml-4">
             <Accordion
               defaultValue="item-0"
               type="single"
