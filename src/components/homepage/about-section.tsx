@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="w-full  py-12 sm:py-16 lg:py-24">
+    <section id="about-us" className="w-full  py-12 sm:py-16 lg:py-24">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
           {/* Left Column - Image and Features */}

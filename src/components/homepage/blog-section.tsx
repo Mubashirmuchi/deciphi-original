@@ -4,7 +4,7 @@ import Card from "../card";
 
 const BlogSection = () => {
   return (
-    <section className="relative py-12 sm:py-16 lg:py-24 max-w-7xl mx-auto flex flex-col gap-5 w-full items-center justify-center bg-white ">
+    <section className="relative py-12 sm:py-16 lg:py-24 max-w-7xl mx-auto flex flex-col gap-5 w-full items-center justify-center bg-white px-4 sm:px-6 lg:px-8 ">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] "></div>
       <Button
         variant={"outline"}

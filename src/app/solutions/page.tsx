@@ -1,7 +1,8 @@
+import CommingSoon from "@/components/commingsoon";
 import React from "react";
 
 const Solutions = () => {
-  return <div className="bg-red-700">Solutions</div>;
+  return <CommingSoon/>
 };
 
 export default Solutions;

@@ -5,7 +5,7 @@ import React from "react";
 const Card = () => {
   return (
     <Link href="#">
-      <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+      <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full">
         <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
           <Image
             width={500}

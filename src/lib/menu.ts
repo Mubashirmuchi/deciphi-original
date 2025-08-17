@@ -1,9 +1,24 @@
-import { BellDot, MapPin, Play, ShoppingBag } from "lucide-react";
+import { BellDot, LucideIcon, MapPin, Play, ShoppingBag } from "lucide-react";
+export interface NavItemsProps {
+  items: {
+    name: string;
+    link: string;
+    submenu?: {
+      name: string;
+      desc?: string;
+      icon?: LucideIcon;
+      path: string;
+    }[];
+  }[];
+  className?: string;
+  onItemClick?: () => void;
+}
+
 
 export const navItems = [
   {
     name: "About us",
-    link: "/about-us",
+    link: "/#about-us",
   },
   {
     name: "Services",

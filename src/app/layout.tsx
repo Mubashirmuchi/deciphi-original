@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Rethink_Sans } from "next/font/google";
 import "./globals.css";
-import { NavbarDemo } from "@/components/Navbar.";
+import { Header } from "@/components/Navbar.";
 import Footer from "@/components/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,12 +61,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log("object");
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${rethinkSans.variable} antialiased`}
       >
-        <NavbarDemo />
+        <Header />
+       
 
         {children}
         <Footer />
