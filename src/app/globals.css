@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 
 :root  {
+
   /* Brand colors */
   --color-primary: #9B2521;            /* #AA1F21 */
   --color-primary-foreground: 0 0% 100%;
@@ -16,14 +17,14 @@
 
 
   /* Neutral shades */
+  --color-neutral-3: #FCFBFA;
   --color-neutral-1: 0 0% 98%;           /* #FAFAFA */
-  --color-neutral-2: 30 14% 99%;         /* #FCFBFA */
-  --color-neutral-3: 30 8% 95%;          /* #F2F0EE */
+  --color-neutral-2: 30 14% 99%;         /* #FCFBFA */        /* #F2F0EE */
   --color-neutral-4: 33 13% 87%;         /* #E1DCD6 */
 
   /* Text colors */
-  --color-text-1: 209 17% 26%;           /* #36424D */
-  --color-text-2: 0 0% 47% ;              /* #777777 */
+  --color-text-1: #191C1F;          /* #36424D */
+  --color-text-2: #777777;              /* #777777 */
 
   /* Structural colors */
   --color-background: var(--color-neutral-1);
@@ -66,3 +67,4 @@
   --text-b3: 0.875rem; --leading-b3: 1.5; --weight-b3: 400;
   --text-b4: 0.75rem;  --leading-b4: 1.5; --weight-b4: 400;
 }
+

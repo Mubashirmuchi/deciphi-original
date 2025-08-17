@@ -1,5 +1,8 @@
 import AboutSection from "@/components/homepage/about-section";
 import HeroSection from "@/components/homepage/hero-section";
+import ServicesSection from "@/components/homepage/services-section";
+import ChooseUsSection from "@/components/homepage/why-choose-us-section";
+import Solutions from "@/components/homepage/solutions-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -47,7 +50,10 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <AboutSection/>
+      <AboutSection />
+      <ServicesSection />
+      <ChooseUsSection />
+      <Solutions />
     </main>
   );
 }
