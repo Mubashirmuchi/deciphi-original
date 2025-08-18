@@ -58,7 +58,7 @@ const MobileNav = ({
         className={cn(
           "relative z-50 mx-auto flex w-full max-w-7xl items-center justify-between  py-2 lg:hidden",
           visible &&
-            "backdrop-blur-md bg-white/70 dark:bg-neutral-950/70 rounded-xl"
+            "backdrop-blur-md bg-neutral-950/70  dark:bg-neutral-950/70 rounded-xl"
         )}
       >
         <NavbarLogo />
@@ -71,7 +71,7 @@ const MobileNav = ({
           <svg
             className="w-6 h-6"
             fill="none"
-            stroke="currentColor"
+            stroke="white"
             viewBox="0 0 24 24"
           >
             <path
@@ -113,7 +113,7 @@ const MobileNav = ({
               </svg>
             </motion.button>
 
-            <nav className="space-y-1 mt-4">
+            <nav className="space-y-3 mt-4">
               {items.map((menu, index) => (
                 <motion.div
                   key={menu.name}
@@ -125,10 +125,9 @@ const MobileNav = ({
                     onClick={() => {
                       setIsOpen(false);
                     }}
-                    className="w-full text-left px-4 py-3  hover:bg-white/10 rounded-lg text-white/70 hover:text-white/90"
+                    className="w-full text-left px-4 py-4  hover:bg-white/10 rounded-lg text-white/70 hover:text-white/90"
                   >
                     <Link href={menu.link}>{menu.name}</Link>
-                    {menu.name}
                   </Button>
                 </motion.div>
               ))}

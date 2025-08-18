@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
       "assets.aceternity.com",
       "images.unsplash.com",
       "images.pexels.com",
+      "videos.pexels.com",
     ],
   },
 

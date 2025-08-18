@@ -12,8 +12,12 @@ const HeroSection = () => {
         muted
         playsInline
         preload="auto"
+        poster="/images/img_frame_38.svg"
       >
-        <source src="/hero.mp4" type="video/mp4" />
+        <source
+          src="https://videos.pexels.com/video-files/3147938/3147938-uhd_2560_1440_30fps.mp4"
+          type="video/mp4"
+        />
       </video>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
