@@ -3,16 +3,21 @@ import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
+
   return (
-    <section className=" min-h-screen flex items-center justify-center w-full">
+    <section
+      id="home"
+      className=" min-h-screen flex items-center justify-center w-full"
+    >
       <video
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
         muted
-        playsInline
+        controls={false}
+        playsInline={true}
         preload="auto"
-        poster="/images/img_frame_38.svg"
+        poster="/images/background.jpeg"
       >
         <source
           src="https://videos.pexels.com/video-files/3147938/3147938-uhd_2560_1440_30fps.mp4"

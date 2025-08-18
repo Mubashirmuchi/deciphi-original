@@ -1,8 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-:root  {
+html,body {
+  scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+}
 
+
+
+:root  {
+  
   /* Brand colors */
   --color-primary: #9B2521;            /* #AA1F21 */
   --color-primary-foreground: 0 0% 100%;

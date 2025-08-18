@@ -113,7 +113,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
 export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
   const pathname = usePathname();
-  console.log("pathname", pathname);
+ 
   return (
     <motion.div onMouseLeave={() => setHovered(null)}>
       <ul
