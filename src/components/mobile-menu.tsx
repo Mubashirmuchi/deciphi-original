@@ -11,6 +11,7 @@ import { NavbarLogo, NavbarProps } from "./ui/resizable-navbar";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { usePathname } from "next/navigation";
 
 export const Navbar = ({ children, className }: NavbarProps) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -46,6 +47,7 @@ const MobileNav = ({
   visible,
 }: NavItemsProps & { visible?: boolean }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const menuVariants = {
     closed: { opacity: 0, x: "100%", transition: { duration: 0.2 } },
@@ -57,8 +59,9 @@ const MobileNav = ({
       <div
         className={cn(
           "relative z-50 mx-auto flex w-full max-w-7xl items-center justify-between  py-2 lg:hidden",
-          visible &&
-            "backdrop-blur-md bg-neutral-950/70  dark:bg-neutral-950/70 rounded-xl"
+          pathname === "/" && !visible
+            ? "bg-transparent"
+            : "backdrop-blur-md bg-neutral-950/70 dark:bg-neutral-950/70 rounded-xl"
         )}
       >
         <NavbarLogo />
@@ -121,14 +124,17 @@ const MobileNav = ({
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <Button
-                    onClick={() => {
-                      setIsOpen(false);
-                    }}
-                    className="w-full text-left px-4 py-4  hover:bg-white/10 rounded-lg text-white/70 hover:text-white/90"
-                  >
-                    <Link href={menu.link}>{menu.name}</Link>
-                  </Button>
+                  <Link href={menu.link}>
+                    {" "}
+                    <Button
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                      className="w-full text-left px-4 py-4  hover:bg-white/10 rounded-lg text-white/70 hover:text-white/90"
+                    >
+                      {menu.name}
+                    </Button>{" "}
+                  </Link>
                 </motion.div>
               ))}
             </nav>

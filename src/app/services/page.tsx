@@ -1,10 +1,10 @@
-import CommingSoon from "@/components/commingsoon";
+import HeroSection from "@/components/servicePage/heroSection";
 import React from "react";
 
 const Services = () => {
   return (
     <main>
-      <CommingSoon />
+      <HeroSection />
     </main>
   );
 };
