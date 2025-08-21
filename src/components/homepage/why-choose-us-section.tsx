@@ -28,7 +28,7 @@ const ChooseUsSection = () => {
                   <Check color="white" fill="#0088FF" />
                 </span>
                 <span className="text-xs sm:text-sm font-space font-normal leading-4 text-text-dark1">
-                  Guided by Best Practices, Powered by Innovation{" "}
+                  Ensure Data Privacy for Enhanced Trust{" "}
                 </span>
               </div>
             </div>

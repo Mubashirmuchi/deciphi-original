@@ -93,11 +93,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${rethinkSans.variable} antialiased`}
+        className={`${geistSans.variable} ${rethinkSans.variable} antialiased bg-black`}
       >
         <Header />
         <SplashScreen>
-        {children}
+          <main className="bg-white">{children}</main>
         </SplashScreen>
 
         <Footer />

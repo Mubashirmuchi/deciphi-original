@@ -7,10 +7,10 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full ">
+    <footer className="w-full bg-white">
       {/* Hero Section */}
 
-      <div className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+      <div className="w-full  px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         <div className="w-full max-w-7xl mx-auto">
           <div className="relative w-full bg-[#b02123] rounded-2xl px-6 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 overflow-hidden">
             {/* Background Image */}
@@ -193,7 +193,10 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-4 border-t border-black/10 pt-6 sm:pt-8">
             {/* Social Media Icons */}
             <div className="flex items-center gap-4 order-2 sm:order-1">
-              <a  href="https://www.linkedin.com/company/deciphi" className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200">
+              <a
+                href="https://www.linkedin.com/company/deciphi"
+                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200"
+              >
                 <Image
                   src="/images/img_link.svg"
                   alt="Social Media"
@@ -202,7 +205,10 @@ const Footer = () => {
                   className="w-full h-full"
                 />
               </a>
-              <a href="https://www.linkedin.com/company/deciphi" className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200">
+              <a
+                href="https://www.linkedin.com/company/deciphi"
+                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200"
+              >
                 <Image
                   src="/images/img_link_white_a700.svg"
                   alt="Social Media"
@@ -211,7 +217,10 @@ const Footer = () => {
                   className="w-full h-full"
                 />
               </a>
-              <a href="https://www.linkedin.com/company/deciphi" className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200">
+              <a
+                href="https://www.linkedin.com/company/deciphi"
+                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200"
+              >
                 <Image
                   src="/images/img_link_white_a700_32x32.svg"
                   alt="Social Media"
@@ -220,7 +229,10 @@ const Footer = () => {
                   className="w-full h-full"
                 />
               </a>
-              <a href="https://www.linkedin.com/company/deciphi" className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200">
+              <a
+                href="https://www.linkedin.com/company/deciphi"
+                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200"
+              >
                 <Image
                   src="/images/img_vector.svg"
                   alt="Social Media"

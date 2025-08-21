@@ -3,14 +3,13 @@ import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
-
   return (
     <section
       id="home"
       className=" min-h-screen flex items-center justify-center w-full"
     >
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover "
         autoPlay
         loop
         muted
