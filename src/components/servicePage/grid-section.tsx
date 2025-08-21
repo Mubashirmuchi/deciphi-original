@@ -50,8 +50,8 @@ const GridSection = () => {
   ];
 
   return (
-    <div className="parent grid grid-cols-1  md:grid-cols-3 grid-rows-3  max-h-[70vh]">
-      <div className="div1 style bg-[var(--neutral-1)] p-2 flex flex-col h-full">
+    <div className="parent grid grid-cols-1  md:grid-cols-3 grid-rows-3 md:max-h-[70vh] ">
+      <div className="div1 style bg-[var(--neutral-1)] p-2 flex flex-col h-full ">
         <BentoGridItem
           icon={cards[0].icon}
           title={cards[0].title}
@@ -67,10 +67,6 @@ const GridSection = () => {
         />
       </div>
       <div className="div3 style  p-2">
-        {" "}
-        {/* <div className="">{cards[0].icon}</div>
-        <p className="">{cards[0].title}</p>
-        <span className="">{cards[0].description}</span> */}
         <BentoGridItem
           icon={cards[1].icon}
           title={cards[1].title}
@@ -78,7 +74,7 @@ const GridSection = () => {
         />
       </div>
       <div
-        className="div4-2-5-8 style  p-2 hidden md:block"
+        className="div4-2-5-8 style  p-2 hidden md:block rounded-2xl"
         style={{
           gridColumn: "2 / 3",
           gridRow: "1 / 4",
@@ -89,7 +85,7 @@ const GridSection = () => {
           height={500}
           src="/images/Rectangle42.png"
           alt="Hot air balloons"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-md"
         />
       </div>
       <div className="div5 style  p-2 flex flex-col">

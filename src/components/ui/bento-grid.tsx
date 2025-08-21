@@ -23,7 +23,7 @@ export const BentoGridItem = ({
   className,
   title,
   description,
-  header,
+  // header,
   icon,
 }: {
   className?: string;
@@ -46,7 +46,7 @@ export const BentoGridItem = ({
         height={100}
         className="h-full w-full"
       />} */}
-      <h3 className="text-black">{header}</h3>
+      {/* <h3 className="text-black">{header}</h3> */}
       <div className="transition duration-200 group-hover/bento:translate-x-2">
         {icon}
         <div className="mt-2 mb-2 font-sans font-bold  ">{title}</div>
