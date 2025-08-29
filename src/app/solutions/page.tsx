@@ -1,8 +1,8 @@
-import CommingSoon from "@/components/commingsoon";
+import Herosection from "@/components/solutionsPage/herosection";
 import React from "react";
 
 const Solutions = () => {
-  return <CommingSoon/>
+  return <Herosection />;
 };
 
 export default Solutions;
