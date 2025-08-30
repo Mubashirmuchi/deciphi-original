@@ -30,11 +30,12 @@ const Grid = () => {
             </div>
             <div className="mt-auto">
               <Image
-                src="/images/img_image_31.png"
+                src="/images/discussion.svg"
                 alt="Consulting Service"
                 width={344}
                 height={148}
                 className="w-full rounded"
+                priority
               />
             </div>
           </div>
@@ -72,13 +73,14 @@ const Grid = () => {
                   className="w-full rounded"
                 />
               </div>
-              <div className="w-full sm:w-40">
+              <div className="w-full sm:w-40 ">
                 <Image
-                  src="/images/img_image_31_226x158.png"
+                  src="/images/upwardlooking.svg"
                   alt="Testing Service"
                   width={158}
                   height={226}
-                  className="w-full rounded"
+                  priority
+                  className="w-full h-full rounded"
                 />
               </div>
             </div>
@@ -226,10 +228,11 @@ const Grid = () => {
             </div>
             <div className="mt-auto">
               <Image
-                src="/images/img_image_31_172x302.png"
+                src="/images/groupeddescussion.svg"
                 alt="Cloud Security Service"
                 width={302}
                 height={172}
+                priority
                 className="w-full rounded"
               />
             </div>

@@ -45,7 +45,8 @@ const AboutSection = () => {
             {/* <div className="relative"> */}
             <div className="w-full max-w-md mx-auto lg:mx-0 lg:ml-4">
               <Image
-                src="/images/img_rectangle_42.png"
+              priority
+                src="/images/triannglehole.svg"
                 alt="Cybersecurity Dashboard"
                 width={382}
                 height={494}

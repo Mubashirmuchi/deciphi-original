@@ -46,10 +46,11 @@ const SolutionsCard = () => {
         </div>
 
         <Image
-          src="/images/img_rectangle_42.png"
+          src="/images/triannglehole.svg"
           alt="Cybersecurity Dashboard"
           width={382}
           height={494}
+          priority
           className="w-full rounded-2xl shadow-lg"
         />
       </div>

@@ -127,10 +127,11 @@ const Solutions = () => {
             {/* <div className="relative"> */}
             <div className="w-full max-w-md mx-auto lg:mx-0 lg:ml-4">
               <Image
-                src="/images/img_rectangle_22018.png"
+                src="/images/ladderboys.svg"
                 alt="Cybersecurity Dashboard"
                 width={382}
                 height={494}
+                priority
                 className="w-full rounded-2xl shadow-lg"
               />
             </div>
