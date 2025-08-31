@@ -1,10 +1,29 @@
-import AboutSection from "@/components/homepage/about-section";
-import HeroSection from "@/components/homepage/hero-section";
-import ServicesSection from "@/components/homepage/services-section";
-import ChooseUsSection from "@/components/homepage/why-choose-us-section";
-import Solutions from "@/components/homepage/solutions-section";
 import { Metadata } from "next";
-import BlogSection from "@/components/homepage/blog-section";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+import { HeroSkeleton } from "@/components/ui/hero-skeleton";
+
+// Lazy load hero section with skeleton
+const HeroSection = dynamic(() => import("@/components/homepage/hero-section"), {
+  loading: () => <HeroSkeleton />
+});
+
+// Lazy load below-the-fold components
+const AboutSection = dynamic(() => import("@/components/homepage/about-section"), {
+  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
+});
+const ServicesSection = dynamic(() => import("@/components/homepage/services-section"), {
+  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
+});
+const ChooseUsSection = dynamic(() => import("@/components/homepage/why-choose-us-section"), {
+  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
+});
+const Solutions = dynamic(() => import("@/components/homepage/solutions-section"), {
+  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
+});
+const BlogSection = dynamic(() => import("@/components/homepage/blog-section"), {
+  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
+});
 
 export const metadata: Metadata = {
   title: "Deciphi Cybersecurity | Protecting Businesses in Qatar",
@@ -50,7 +69,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      <Suspense fallback={<HeroSkeleton />}>
+        <HeroSection />
+      </Suspense>
       <AboutSection />
       <ServicesSection />
       <ChooseUsSection />

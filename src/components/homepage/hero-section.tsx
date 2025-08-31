@@ -1,35 +1,30 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
-import { MediaItem, MediaSlideshow } from "./mediaSlideshow";
 
 const HeroSection = () => {
-  const mediaItems: MediaItem[] = [
-    {
-      type: "video",
-      src: "https://videos.pexels.com/video-files/3147938/3147938-uhd_2560_1440_30fps.mp4",
-      poster: "/images/background.jpeg",
-    },
-    {
-      type: "image",
-      src: "/images/slide1.jpg",
-      duration: 5000, // 5 seconds for images
-    },
-  ];
-
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center w-full overflow-hidden"
     >
-      {/* Full Background Video */}
+      {/* Background Video with Fallback */}
       <div className="absolute inset-0 w-full h-full">
-        <MediaSlideshow
-          mediaItems={mediaItems}
-          overlay={true}
-          overlayColor="overlayBlack"
-          loopLastItem={true}
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover"
+          poster="/images/background.jpeg"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/3147938/3147938-uhd_2560_1440_30fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Content Overlay */}
