@@ -30,7 +30,7 @@ const Grid = () => {
             </div>
             <div className="mt-auto">
               <Image
-                src="/images/img_image_31.png"
+                src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/img_consulting_131.jpg"
                 alt="Consulting Service"
                 width={344}
                 height={148}
@@ -72,13 +72,24 @@ const Grid = () => {
                   className="w-full rounded"
                 />
               </div>
-              <div className="w-full sm:w-40">
+              {/* <div className="w-[158px]  h-[226px] sm:w-40">
                 <Image
-                  src="/images/img_image_31_226x158.png"
+                  // src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/thisisengineering.jpg"
+                                  //  src="/images/img_image_31_226x158.png"
+
                   alt="Testing Service"
                   width={158}
                   height={226}
-                  className="w-full rounded"
+                  className="w-full h-full object-cover rounded"
+                />
+              </div> */}
+              <div className="w-full sm:w-40">
+                <Image
+                  src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/thisisengineer-5.png"
+                  alt="Testing Service"
+                  width={158}
+                  height={226}
+                  className="w-full h-full  rounded"
                 />
               </div>
             </div>

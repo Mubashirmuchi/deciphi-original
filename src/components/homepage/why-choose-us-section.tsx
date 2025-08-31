@@ -37,7 +37,7 @@ const ChooseUsSection = () => {
             {/* <div className="relative"> */}
             <div className="w-full max-w-md mx-auto lg:mx-0 lg:ml-4">
               <Image
-                src="/images/img_6658419166a051c.png"
+                src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/learning.jpg"
                 alt="Cybersecurity Dashboard"
                 width={382}
                 height={494}

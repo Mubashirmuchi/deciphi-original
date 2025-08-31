@@ -16,33 +16,96 @@ const rethinkSans = Rethink_Sans({
 export const viewport = {
   width: "device-width",
   initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
 };
 
 export const metadata: Metadata = {
-  title: "Deciphi – Cybersecurity Experts in Qatar",
-  description: "Securing your network with expert-led cybersecurity solutions.",
-  metadataBase: new URL("https://deciphi.vercel.app"), // ✅ Replace with your domain
+  metadataBase: new URL("https://deciphi.com"),
+  title: {
+    default: "Deciphi – Cybersecurity Experts in Qatar",
+    template: "%s | Deciphi Cybersecurity"
+  },
+  description: "Leading cybersecurity company in Qatar providing expert network security, data protection, and compliance solutions. Secure your business with Deciphi's professional cybersecurity services.",
+  applicationName: "Deciphi Cybersecurity",
+  authors: [{ name: "Deciphi Cybersecurity Team", url: "https://deciphi.com" }],
+  generator: "Next.js",
+  keywords: [
+    "cybersecurity Qatar",
+    "network security",
+    "data protection",
+    "cybersecurity consulting",
+    "penetration testing",
+    "security compliance",
+    "cyber threat protection"
+  ],
+  referrer: "origin-when-cross-origin",
+  creator: "Deciphi Cybersecurity",
+  publisher: "Deciphi Cybersecurity",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://deciphi.com",
+    languages: {
+      "en-QA": "https://deciphi.com",
+      "ar-QA": "https://deciphi.com/ar",
+    },
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/manifest.json",
   openGraph: {
-    title: "Deciphi – Cybersecurity Experts",
-    description: "Stay ahead of evolving cyber risks with Deciphi.",
-    url: "https://deciphi.vercel.app",
-    siteName: "Deciphi",
+    type: "website",
+    locale: "en_QA",
+    url: "https://deciphi.com",
+    siteName: "Deciphi Cybersecurity",
+    title: "Deciphi – Cybersecurity Experts in Qatar",
+    description: "Leading cybersecurity company in Qatar providing expert network security, data protection, and compliance solutions.",
     images: [
       {
-        url: "https://deciphi.vercel.app/og-image.png", // full absolute URL
+        url: "/images/Rectangle42.png",
         width: 1200,
         height: 630,
+        alt: "Deciphi Cybersecurity - Qatar's Leading Security Experts",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deciphi – Cybersecurity Experts",
-    description: "Stay ahead of evolving cyber risks with Deciphi.",
-    images: ["https://deciphi.vercel.app/og-image.png"], // full absolute URL
+    site: "@deciphi",
+    creator: "@deciphi",
+    title: "Deciphi – Cybersecurity Experts in Qatar",
+    description: "Leading cybersecurity company in Qatar providing expert security solutions.",
+    images: ["/images/Rectangle42.png"],
   },
+  verification: {
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
+    yahoo: "your-yahoo-verification-code",
+  },
+  category: "Cybersecurity",
 };
 
 export default function RootLayout({

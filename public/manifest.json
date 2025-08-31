@@ -1,0 +1,26 @@
+{
+  "name": "Deciphi Cybersecurity",
+  "short_name": "Deciphi",
+  "description": "Leading cybersecurity company in Qatar providing expert network security and data protection solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/img_frame_38.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["business", "security", "technology"],
+  "lang": "en-QA",
+  "dir": "ltr"
+}
