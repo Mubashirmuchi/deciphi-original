@@ -14,9 +14,9 @@ const Grid = () => {
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-rethink font-medium text-text-secondary1 flex-1 pr-4">
                   Cybersecurity Consulting
                 </h3>
-                <div className="bg-accent-yellow1 rounded-full p-2 flex-shrink-0">
+                <div className="bg-[#D5C056] rounded-full p-2 flex-shrink-0">
                   <Image
-                    src="/images/img_consulting_1.png"
+                    src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/consultiong.png"
                     alt="Consulting Icon"
                     width={32}
                     height={32}
@@ -48,9 +48,9 @@ const Grid = () => {
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-rethink font-medium text-text-secondary1 flex-1 pr-4">
                   Security Assessment & Testing
                 </h3>
-                <div className="bg-accent-green1 rounded-full p-2 flex-shrink-0">
+                <div className="bg-[#5BD661] rounded-full p-2 flex-shrink-0">
                   <Image
-                    src="/images/img_penetration_testing.png"
+                    src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/penetration.png"
                     alt="Testing Icon"
                     width={32}
                     height={32}
@@ -72,20 +72,10 @@ const Grid = () => {
                   className="w-full rounded"
                 />
               </div>
-              {/* <div className="w-[158px]  h-[226px] sm:w-40">
-                <Image
-                  // src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/thisisengineering.jpg"
-                                  //  src="/images/img_image_31_226x158.png"
 
-                  alt="Testing Service"
-                  width={158}
-                  height={226}
-                  className="w-full h-full object-cover rounded"
-                />
-              </div> */}
               <div className="w-full sm:w-40">
                 <Image
-                  src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/thisisengineer-5.png"
+                  src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/pexels-thisisengineering-3862383-scaled-e1756632630839.jpg"
                   alt="Testing Service"
                   width={158}
                   height={226}
@@ -102,9 +92,9 @@ const Grid = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-end">
           <div className="space-y-6">
             <div className="space-y-6">
-              <div className="bg-primary-dark1 rounded-full p-2 w-12 h-12">
+              <div className="bg-[#5559D5] rounded-full p-2 w-12 h-12">
                 <Image
-                  src="/images/img_frame_65.png"
+                  src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/socialeng.png"
                   alt="Training Icon"
                   width={32}
                   height={32}
@@ -142,9 +132,9 @@ const Grid = () => {
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-rethink font-medium text-text-secondary1 flex-1 pr-4">
                   System Integration
                 </h3>
-                <div className="bg-accent-blue1 rounded-full p-2 flex-shrink-0">
+                <div className="bg-[#58C9D6] rounded-full  flex-shrink-0 p-2">
                   <Image
-                    src="/images/img_encryption_1.png"
+                    src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/encryption.png"
                     alt="Integration Icon"
                     width={32}
                     height={32}
@@ -180,7 +170,7 @@ const Grid = () => {
                 </h3>
                 <div className="bg-red-500 rounded-full p-2 flex-shrink-0">
                   <Image
-                    src="/images/img_cybersecurity_1.png"
+                    src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/lock.png"
                     alt="OT Security Icon"
                     width={32}
                     height={32}
@@ -221,9 +211,9 @@ const Grid = () => {
                   <br />
                   Security
                 </h3>
-                <div className="bg-accent-blue1 rounded-full p-2 flex-shrink-0">
+                <div className="bg-[#57AFD5] rounded-full p-2 flex-shrink-0">
                   <Image
-                    src="/images/img_secure_database.png"
+                    src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/secuure.png"
                     alt="Cloud Security Icon"
                     width={32}
                     height={32}
@@ -237,7 +227,7 @@ const Grid = () => {
             </div>
             <div className="mt-auto">
               <Image
-                src="/images/img_image_31_172x302.png"
+                src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/discuss-scaled.jpg"
                 alt="Cloud Security Service"
                 width={302}
                 height={172}
