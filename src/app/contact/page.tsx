@@ -109,7 +109,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="flex flex-col gap-8 w-full items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:pb-5 md:pt-40 pt-40">
+    <div className="flex flex-col gap-8 w-full items-center justify-center  bg-[var(--color-neutral-1)] mx-auto px-4 sm:px-6 lg:px-8 md:pb-5 md:pt-40 pt-40">
       <div className="w-full max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Left Section: Content */}
@@ -121,6 +121,8 @@ const ContactSection = () => {
               <div className="bg-green-500 w-3 h-3 rounded-full"></div>
               Contact Us
             </Button>
+
+            
 
             <h1 className="text-center lg:text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-sans font-semibold leading-tight text-gray-900">
               Get in Touch
@@ -138,7 +140,7 @@ const ContactSection = () => {
           </div>
 
           {/* Right Section: Form */}
-          <Card className="w-full bg-white shadow-lg rounded-xl overflow-path">
+          <Card className="w-full bg-white shadow-lg rounded-xl overflow-path border-none">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl md:text-3xl font-bold text-gray-900">
                 Send Us a Message

@@ -74,13 +74,10 @@ export default async function BlogPage() {
             security program that fits your goals.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 sm:gap-2 mg:gap-4 lg:gap-4">
             {posts.map((post) => (
-              <article
-                key={post.id}
-              
-              >
-               <BlogCard key={post.id} post={post} />
+              <article key={post.id}>
+                <BlogCard key={post.id} post={post} />
               </article>
             ))}
           </div>

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { CMSBlogPost } from "@/lib/cms";
 
-
 const BlogCard = ({ post }: { post: CMSBlogPost }) => {
   // Generate initials from author name
   const getInitials = (name: string) => {
@@ -24,16 +23,22 @@ const BlogCard = ({ post }: { post: CMSBlogPost }) => {
 
   return (
     <Link href={`/blog/${post.slug}`} className="group">
-      <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full">
+      <div className="relative flex flex-col  bg-white shadow-sm border border-slate-200 rounded-lg w-full max-h-[500px]">
         {/* Featured Image */}
         <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-          <Image
-            src={post.featuredImage.url}
-            alt={post.featuredImage.alt}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
+          {post.featuredImage.url ? (
+            <Image
+              src={post.featuredImage.url}
+              alt={post.featuredImage.alt}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          ) : (
+            <div className="flex items-center justify-center h-full bg-gray-200">
+              <span className="text-gray-500">No Image Available</span>
+            </div>
+          )}
         </div>
 
         {/* Content */}

@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import TextChip from "../storyChip";
+import Link from "next/link";
 
 const SolutionsCard = () => {
   return (
@@ -23,9 +24,15 @@ const SolutionsCard = () => {
             enforcing security policies and monitoring activity to prevent data
             loss, misconfigurations, and shadow IT.
           </p>
-          <Button variant={"outline"} className="border border-black/10 w-fit">
-            Contact us
-          </Button>
+          <Link href="/contact">
+            <Button
+              variant={"outline"}
+              className="border border-black/10 w-fit cursor-pointer bg-[var(--color-primary)] text-white hover:bg-[#71120f] transition-all duration-300 "
+            >
+              Contact us
+            </Button>
+          </Link>
+          
         </div>
       </div>
       <div className="relative ">

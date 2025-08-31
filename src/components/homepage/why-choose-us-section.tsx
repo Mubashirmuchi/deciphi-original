@@ -1,11 +1,12 @@
 import { Check } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 
 const ChooseUsSection = () => {
   return (
-    <section className="w-full  py-12 sm:py-16 lg:py-24">
+    <section id="why-choose-us" className="w-full  py-12 sm:py-16 lg:py-24">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
           {/* Left Column - Image and Features */}
@@ -78,9 +79,15 @@ const ChooseUsSection = () => {
               </div>
             </div>
 
-            <Button size="sm" className="bg-[var(--color-primary)] text-white">
-              Contact us
-            </Button>
+            <Link href="/contact">
+           
+              <Button
+                size="sm"
+                className="bg-[var(--color-primary)] text-white cursor-pointer"
+              >
+                Contact us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

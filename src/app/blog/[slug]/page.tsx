@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { Article } from "@/components/craft";
+import { LinkedinIcon, TwitterIcon } from "lucide-react";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -186,9 +187,7 @@ export default async function BlogPost({ params }: Props) {
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 /> */}
 
-                <Article
-                  dangerouslySetInnerHTML={{ __html: post.content }}
-                />
+                <Article dangerouslySetInnerHTML={{ __html: post.content }} />
 
                 {/* Tags */}
                 {post.tags.length > 0 && (
@@ -223,9 +222,10 @@ export default async function BlogPost({ params }: Props) {
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                      className=" p-2  text-white transition-colors rounded-full border border-gray-700 hover:border-gray-900"
+                      // hover:bg-blue-600 bg-blue-500
                     >
-                      Twitter
+                      <TwitterIcon stroke="currentColor" fill="black" />
                     </a>
                     <a
                       href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
@@ -233,9 +233,10 @@ export default async function BlogPost({ params }: Props) {
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors"
+                                         className=" p-2  text-white transition-colors rounded-full border border-gray-700 hover:border-gray-900"
+
                     >
-                      LinkedIn
+                      <LinkedinIcon stroke="currentColor" fill="black" />
                     </a>
                   </div>
                 </div>
@@ -250,7 +251,7 @@ export default async function BlogPost({ params }: Props) {
                   About the Author
                 </h3>
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-xl">
                       {post.author.name.charAt(0)}
                     </span>

@@ -26,20 +26,13 @@ const BlogSection = async () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {latestPosts.map((post) => (
-          
-       
-
-          
-        <BlogCard key={post.id} post={post} />
-
+          <BlogCard key={post.id} post={post} />
         ))}
-
-
       </div>
       <div className="mt-8">
         <Link
           href="/blog"
-          className="inline-flex items-center px-6 py-3 bg-[var(--color-primary)] text-white rounded-lg hover:bg-blue-700 transition-colors"
+          className="inline-flex items-center px-6 py-3  rounded-lg bg-[var(--color-primary)] text-white hover:bg-[#71120f]  duration-300 transition-colors"
         >
           View All Posts →
         </Link>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -43,10 +44,13 @@ const HeroSection = () => {
             and secure your future.
           </p>
           <div className="pt-4">
-            <Button className="bg-[linear-gradient(113deg,#ac1b1b_0%,#721212_50%,#460a0a_100%)] border-border-secondary1 rounded-[6px] text-sm sm:text-base py-6">
-              Contact us
-              <ChevronRight className="ml-2" />
-            </Button>
+            <Link  href="/contact">
+              <Button className="bg-[linear-gradient(113deg,#ac1b1b_0%,#721212_50%,#460a0a_100%)]   hover:bg-[linear-gradient(113deg,#c62828_0%,#8b1c1c_50%,#5a0d0d_100%)]
+  transition-all duration-300  border-border-secondary1 rounded-[6px] text-sm sm:text-base py-6 cursor-pointer">
+                Contact us
+                <ChevronRight className="ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

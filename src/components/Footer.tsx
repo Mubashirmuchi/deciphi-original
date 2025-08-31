@@ -2,7 +2,13 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import { BackgroundBeams } from "./shockwave";
-import { ChevronRight } from "lucide-react";
+import {
+  ChevronRight,
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
@@ -33,12 +39,14 @@ const Footer = () => {
                 </h2>
               </div>
 
-              <Button className="inline-flex items-center gap-2 bg-white  rounded-lg px-4 sm:px-6 py-1 hover:bg-opacity-90 transition-all duration-200 shadow-md">
-                <span className="text-sm sm:text-base font-arial text-text-footer1">
-                  Contact us
-                </span>
-                <ChevronRight />
-              </Button>
+              <Link href="/contact">
+                <Button className="cursor-pointer inline-flex items-center gap-2 bg-white  rounded-lg px-4 sm:px-6 py-1 hover:bg-opacity-90 transition-all duration-200 shadow-md">
+                  <span className="text-sm sm:text-base font-arial text-text-footer1">
+                    Contact us
+                  </span>
+                  <ChevronRight />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -70,11 +78,11 @@ const Footer = () => {
                 <div className="space-y-1 mb-2">
                   <p className="text-sm text-text-muted1">Contact</p>
                   <p className="text-base sm:text-lg font-rethink font-medium text-text-secondary1">
-                    contact@deciphi.com
+                    <a href="mailto:contact@deciphi.com">contact@deciphi.com</a>
                   </p>
                 </div>
                 <p className="text-base sm:text-lg font-rethink font-medium text-text-secondary1">
-                  +974 4149 9289
+                  <a href="tel:+97441499289">+974 4149 9289</a>
                 </p>
               </div>
             </div>
@@ -90,7 +98,7 @@ const Footer = () => {
               <ul className="space-y-3 sm:space-y-4">
                 <li>
                   <Link
-                    href="#"
+                 href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Cybersecurity Consulting
@@ -98,7 +106,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                   href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Security Assessment & Testing
@@ -106,7 +114,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+       href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Cybersecurity Awareness Training
@@ -114,7 +122,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     System Integration
@@ -122,7 +130,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     OT Security
@@ -130,7 +138,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Cloud Security
@@ -147,7 +155,7 @@ const Footer = () => {
               <ul className="space-y-3 sm:space-y-4">
                 <li>
                   <Link
-                    href="#"
+                    href="#about-us"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     About us
@@ -155,7 +163,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="#why-choose-us"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Why choose us
@@ -163,7 +171,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/solutions"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Solutions
@@ -171,7 +179,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/blog"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     News
@@ -194,52 +202,28 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="flex items-center gap-4 order-2 sm:order-1">
               <a
-                href="https://www.linkedin.com/company/deciphi"
-                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200"
+                href="https://www.facebook.com/share/1JckRdEtuo/?mibextid=wwXIfr"
+                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200 flex items-center justify-center"
               >
-                <Image
-                  src="/images/img_link.svg"
-                  alt="Social Media"
-                  width={16}
-                  height={16}
-                  className="w-full h-full"
-                />
+                <Facebook color="white" />
+              </a>
+              <a
+                href="https://x.com/teamdeciphi"
+                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200 flex items-center justify-center"
+              >
+                <Twitter color="white" />
+              </a>
+              <a
+                href="https://www.instagram.com/teamdeciphi?igsh=YWg4aG5meDNqemQ3"
+                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200 flex items-center justify-center"
+              >
+                <Instagram color="white" />
               </a>
               <a
                 href="https://www.linkedin.com/company/deciphi"
-                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200"
+                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200 flex items-center justify-center"
               >
-                <Image
-                  src="/images/img_link_white_a700.svg"
-                  alt="Social Media"
-                  width={16}
-                  height={16}
-                  className="w-full h-full"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/deciphi"
-                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200"
-              >
-                <Image
-                  src="/images/img_link_white_a700_32x32.svg"
-                  alt="Social Media"
-                  width={16}
-                  height={16}
-                  className="w-full h-full"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/deciphi"
-                className="w-8 h-8 bg-[hsl(var(--color-accent-dark))] rounded-full p-2 hover:opacity-80 transition-opacity duration-200"
-              >
-                <Image
-                  src="/images/img_vector.svg"
-                  alt="Social Media"
-                  width={16}
-                  height={16}
-                  className="w-full h-full"
-                />
+                <Youtube color="white" />
               </a>
             </div>
 

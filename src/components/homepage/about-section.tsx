@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 const AboutSection = () => {
   return (
@@ -85,10 +86,14 @@ const AboutSection = () => {
                 </p>
               </div>
             </div>
-
-            <Button size="sm" className="bg-[var(--color-primary)] text-white">
-              Contact us
-            </Button>
+            <Link href="/contact">
+              <Button
+                size="sm"
+                className="cursor-pointer bg-[var(--color-primary)] text-white hover:bg-[#71120f] transition-all duration-300"
+              >
+                Contact us
+              </Button>
+            </Link>
           </div>
         </div>
 

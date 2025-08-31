@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
       "images.unsplash.com",
       "images.pexels.com",
       "videos.pexels.com",
+      "placehold.co",
       "midnightblue-raccoon-734944.hostingersite.com"
     ],
     formats: ["image/avif", "image/webp"],
