@@ -65,7 +65,7 @@ const Grid = () => {
             <div className="flex flex-col sm:flex-row gap-4 mt-auto">
               <div className="flex-1">
                 <Image
-                  src="/images/img_65e15c96dcb88d9.png"
+                  src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/09/3099de0aa477b5af3188bed9d56541638939a9ae.png"
                   alt="Assessment Service"
                   width={354}
                   height={220}
@@ -183,15 +183,18 @@ const Grid = () => {
               </p>
             </div>
             <div className="mt-auto space-y-3">
-              <Image
+              {/* <Image
                 src="/images/img_group_61.svg"
                 alt="OT Service 1"
                 width={304}
                 height={38}
                 className="w-full"
-              />
+              /> */}
               <Image
-                src="/images/img_group_65.svg"
+                src={
+                  "https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/09/ChatGPT-Image-Sep-4-2025-02_52_55-PM.png"
+                }
+                // src="/images/img_group_65.svg"
                 alt="OT Service 2"
                 width={306}
                 height={86}
@@ -227,7 +230,7 @@ const Grid = () => {
             </div>
             <div className="mt-auto">
               <Image
-                src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/08/discuss-scaled.jpg"
+                src="https://midnightblue-raccoon-734944.hostingersite.com/wp-content/uploads/2025/09/paul-hanaoka-s0XabTAKvak-unsplash-scaled.jpg"
                 alt="Cloud Security Service"
                 width={302}
                 height={172}

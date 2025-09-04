@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { MediaSlideshow } from "./mediaSlideshow";
 
 const HeroSection = () => {
   return (
@@ -11,7 +12,7 @@ const HeroSection = () => {
     >
       {/* Background Video with Fallback */}
       <div className="absolute inset-0 w-full h-full">
-        <video
+        {/* <video
           autoPlay
           muted
           loop
@@ -24,8 +25,20 @@ const HeroSection = () => {
             src="https://videos.pexels.com/video-files/3147938/3147938-uhd_2560_1440_30fps.mp4"
             type="video/mp4"
           />
-        </video>
-        <div className="absolute inset-0 bg-black/60" />
+        </video> */}
+        <MediaSlideshow
+          mediaItems={[
+            {
+              type: "video",
+              src: "https://videos.pexels.com/video-files/3147938/3147938-uhd_2560_1440_30fps.mp4",
+            },
+            {
+              type: "image",
+              src: "/images/background.jpeg",
+            },
+          ]}
+        />
+        <div className="absolute inset-0 bg-black opacity-20" />
       </div>
 
       {/* Content Overlay */}
@@ -39,14 +52,16 @@ const HeroSection = () => {
             <span className="sm:hidden"> </span>Expertise.
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-arial font-normal leading-relaxed max-w-3xl mx-auto text-text-2">
-            At Deciphi, we help organizations stay ahead of evolving cyber
-            risks. Our expert-led services empower you to act with confidence
-            and secure your future.
+            Deciphi empowers organizations with intelligent, adaptable defenses
+            so you can innovate with confidence while we protect what matters
+            most.
           </p>
           <div className="pt-4">
-            <Link  href="/contact">
-              <Button className="bg-[linear-gradient(113deg,#ac1b1b_0%,#721212_50%,#460a0a_100%)]   hover:bg-[linear-gradient(113deg,#c62828_0%,#8b1c1c_50%,#5a0d0d_100%)]
-  transition-all duration-300  border-border-secondary1 rounded-[6px] text-sm sm:text-base py-6 cursor-pointer">
+            <Link href="/contact">
+              <Button
+                className="bg-[linear-gradient(113deg,#ac1b1b_0%,#721212_50%,#460a0a_100%)]   hover:bg-[linear-gradient(113deg,#c62828_0%,#8b1c1c_50%,#5a0d0d_100%)]
+  transition-all duration-300  border-border-secondary1 rounded-[6px] text-sm sm:text-base py-6 cursor-pointer"
+              >
                 Contact us
                 <ChevronRight className="ml-2" />
               </Button>

@@ -44,7 +44,7 @@ const BlogCard = ({ post }: { post: CMSBlogPost }) => {
         {/* Content */}
         <div className="p-4">
           {/* Categories */}
-          {post.categories?.length > 0 && (
+          {/* {post.categories?.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-3">
               {post.categories.slice(0, 2).map((category: string) => (
                 <span
@@ -55,7 +55,7 @@ const BlogCard = ({ post }: { post: CMSBlogPost }) => {
                 </span>
               ))}
             </div>
-          )}
+          )} */}
 
           {/* Title */}
           <h6 className="mb-2 text-slate-800 text-xl font-semibold">
@@ -70,7 +70,7 @@ const BlogCard = ({ post }: { post: CMSBlogPost }) => {
 
         {/* Footer */}
         <div className="flex items-center justify-between p-4">
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <Avatar>
               <AvatarFallback>{getInitials(post.author.name)}</AvatarFallback>
             </Avatar>
@@ -82,7 +82,7 @@ const BlogCard = ({ post }: { post: CMSBlogPost }) => {
                 {formatDate(post.publishedAt)}
               </span>
             </div>
-          </div>
+          </div> */}
           <span className="text-blue-600 hover:text-blue-800 font-medium">
             Read More →
           </span>

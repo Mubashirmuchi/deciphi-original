@@ -16,7 +16,7 @@ const BlogSection = async () => {
         className="border border-black/10 relative bg-white"
       >
         <div className="bg-green-600 w-2 h-2 rounded-full mr-2 "></div>
-        Blogs
+        BLOGS
       </Button>
       <h2 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rethink font-medium leading-tight ">
         Whats

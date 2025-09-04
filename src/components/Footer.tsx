@@ -31,11 +31,11 @@ const Footer = () => {
                     <span className="bg-gradient-to-b from-transparent to-red-800 px-2 border-b-4 border-[#E85744]">
                       Cybersecurity
                     </span>{" "}
-                    Doesn &apos; t Have
+                    Does Not Have
                   </h2>
                 </div>
                 <h2 className="text-2xl text-white sm:text-3xl md:text-4xl lg:text-5xl font-rethink font-medium text-white-1">
-                  to Be Complicated
+                  To Be Complicated.
                 </h2>
               </div>
 
@@ -98,7 +98,7 @@ const Footer = () => {
               <ul className="space-y-3 sm:space-y-4">
                 <li>
                   <Link
-                 href="/services"
+                    href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Cybersecurity Consulting
@@ -106,7 +106,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                   href="/services"
+                    href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Security Assessment & Testing
@@ -114,7 +114,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-       href="/services"
+                    href="/services"
                     className="text-sm sm:text-base font-arial text-text-muted1 hover:text-text-primary1 transition-colors duration-200"
                   >
                     Cybersecurity Awareness Training

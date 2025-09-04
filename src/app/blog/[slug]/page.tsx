@@ -127,7 +127,7 @@ export default async function BlogPost({ params }: Props) {
           <div className="w-full max-w-7xl mx-auto px-4 pb-12">
             <div className="text-white">
               {/* Categories */}
-              {post.categories.length > 0 && (
+              {/* {post.categories.length > 0 && (
                 <div className="mb-4">
                   {post.categories.map((category) => (
                     <span
@@ -138,7 +138,7 @@ export default async function BlogPost({ params }: Props) {
                     </span>
                   ))}
                 </div>
-              )}
+              )} */}
               <h1 className="text-4xl md:text-6xl font-bold mb-4 max-w-4xl">
                 {post.title}
               </h1>

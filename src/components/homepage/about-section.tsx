@@ -10,50 +10,40 @@ const AboutSection = () => {
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
           {/* Left Column - Image and Features */}
-          <div className="order-2 lg:order-1 space-y-6 relative">
-            {/* Feature Tags */}
-            <div className="space-y-3 lg:ml-8 xl:ml-16   ">
-              <div className="lg:ml-8 xl:ml-16">
-                <div className="absolute top-3 left-28 shadow-md bg-white  rounded-2xl px-6 py-2  flex gap-2 items-center">
-                  <span className="bg-[var(--color-blue)] rounded-full  ">
-                    <Check color="white" fill="#0088FF" />
-                  </span>
-
-                  <span className="text-xs sm:text-sm font-space font-normal leading-4 text-text-dark1">
-                    Simplify Compliance with Automated Reporting Tools
-                  </span>
-                </div>
-              </div>
-              <div className="absolute top-16 left-40 shadow-md bg-white  rounded-2xl px-6 py-2  flex gap-2 items-center">
-                <span className="bg-[var(--color-blue)] rounded-full  ">
+          <div className="w-full max-w-md mx-auto lg:mx-0 lg:ml-4 relative">
+            <Image
+              src="/images/img_rectangle_42.png"
+              alt="Cybersecurity Dashboard"
+              width={382}
+              height={494}
+              className="w-full rounded-2xl shadow-lg"
+            />
+            <div className="space-y-3 lg:ml-8 xl:ml-16">
+              <div className="absolute top-3 left-0 md:left-3 w-full max-w-[382px] shadow-md bg-white rounded-2xl px-4 py-2 flex gap-2 items-center">
+                <span className="bg-[var(--color-blue)] rounded-full flex-shrink-0">
                   <Check color="white" fill="#0088FF" />
                 </span>
-                <span className="text-xs sm:text-sm font-space font-normal leading-4 text-text-dark1">
+                <span className="text-xs sm:text-sm font-space font-normal leading-4 text-text-dark1 w-full">
+                  Simplify Compliance with Automated Reporting Tools
+                </span>
+              </div>
+              <div className="absolute top-16 right-0 w-full max-w-[382px] shadow-md bg-white rounded-2xl px-4 py-2 flex gap-2 items-center">
+                <span className="bg-[var(--color-blue)] rounded-full flex-shrink-0">
+                  <Check color="white" fill="#0088FF" />
+                </span>
+                <span className="text-xs sm:text-sm font-space font-normal leading-4 text-text-dark1 w-full">
                   Get Expert Support When You Need It, On-Demand
                 </span>
               </div>
-              <div className="absolute top-36 left-3 bg-white  rounded-2xl px-6 py-2  flex gap-2 items-center">
-                <span className="bg-[var(--color-blue)] rounded-full  ">
+              <div className="absolute top-[117px] left-0 w-full max-w-[382px] shadow-md bg-white rounded-2xl px-4 py-2 flex gap-2 items-center">
+                <span className="bg-[var(--color-blue)] rounded-full flex-shrink-0">
                   <Check color="white" fill="#0088FF" />
                 </span>
-                <span className="text-xs sm:text-sm font-space font-normal leading-4 text-text-dark1">
+                <span className="text-xs sm:text-sm  font-space font-normal leading-4 text-text-dark1 w-full">
                   Stay Protected 24/7 with Real-Time Threat Monitoring
                 </span>
               </div>
             </div>
-
-            {/* Main Image */}
-            {/* <div className="relative"> */}
-            <div className="w-full max-w-md mx-auto lg:mx-0 lg:ml-4">
-              <Image
-                src="/images/img_rectangle_42.png"
-                alt="Cybersecurity Dashboard"
-                width={382}
-                height={494}
-                className="w-full rounded-2xl shadow-lg"
-              />
-            </div>
-            {/* </div> */}
           </div>
 
           {/* Right Column - Content */}
@@ -79,10 +69,13 @@ const AboutSection = () => {
                 </div>
 
                 <p className="text-base sm:text-lg font-arial leading-relaxed text-text-secondary1">
-                  We connect the dots — so you do not have to. Partnering with
-                  industry leaders, we design and implement solutions tailored
-                  to your business, ensuring resilience and seamless operations
-                  without missing a beat.
+                  We connect the dots, so you do not have to. At Deciphi, we
+                  simplify cybersecurity by transforming complex challenges into
+                  clear, effective strategies. Our team combines deep expertise
+                  with a forward-thinking approach to deliver solutions that
+                  protect your operations today while preparing you for
+                  tomorrow’s threats. With us, security is not just a safeguard
+                  but a foundation for growth and resilience.
                 </p>
               </div>
             </div>

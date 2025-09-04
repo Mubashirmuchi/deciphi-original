@@ -4,33 +4,52 @@ import { Suspense } from "react";
 import { HeroSkeleton } from "@/components/ui/hero-skeleton";
 
 // Lazy load hero section with skeleton
-const HeroSection = dynamic(() => import("@/components/homepage/hero-section"), {
-  loading: () => <HeroSkeleton />
-});
+const HeroSection = dynamic(
+  () => import("@/components/homepage/hero-section"),
+  {
+    loading: () => <HeroSkeleton />,
+  }
+);
 
 // Lazy load below-the-fold components
-const AboutSection = dynamic(() => import("@/components/homepage/about-section"), {
-  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
-});
-const ServicesSection = dynamic(() => import("@/components/homepage/services-section"), {
-  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
-});
-const ChooseUsSection = dynamic(() => import("@/components/homepage/why-choose-us-section"), {
-  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
-});
-const Solutions = dynamic(() => import("@/components/homepage/solutions-section"), {
-  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
-});
-const BlogSection = dynamic(() => import("@/components/homepage/blog-section"), {
-  loading: () => <div className="h-96 bg-gray-50 animate-pulse" />
-});
+const AboutSection = dynamic(
+  () => import("@/components/homepage/about-section"),
+  {
+    loading: () => <div className="h-96 bg-gray-50 animate-pulse" />,
+  }
+);
+const ServicesSection = dynamic(
+  () => import("@/components/homepage/services-section"),
+  {
+    loading: () => <div className="h-96 bg-gray-50 animate-pulse" />,
+  }
+);
+const ChooseUsSection = dynamic(
+  () => import("@/components/homepage/why-choose-us-section"),
+  {
+    loading: () => <div className="h-96 bg-gray-50 animate-pulse" />,
+  }
+);
+const Solutions = dynamic(
+  () => import("@/components/homepage/solutions-section"),
+  {
+    loading: () => <div className="h-96 bg-gray-50 animate-pulse" />,
+  }
+);
+const BlogSection = dynamic(
+  () => import("@/components/homepage/blog-section"),
+  {
+    loading: () => <div className="h-96 bg-gray-50 animate-pulse" />,
+  }
+);
 
 export const metadata: Metadata = {
   title: "Deciphi Cybersecurity | Expert Cybersecurity Solutions in Qatar",
-  description: "Leading cybersecurity company in Qatar providing expert network security, data protection, cloud security, and compliance solutions. Protect your business from evolving cyber threats.",
+  description:
+    "Leading cybersecurity company in Qatar providing expert network security, data protection, cloud security, and compliance solutions. Protect your business from evolving cyber threats.",
   keywords: [
     "cybersecurity Qatar",
-    "network security Qatar", 
+    "network security Qatar",
     "data protection Qatar",
     "cloud security",
     "cybersecurity consulting",
@@ -38,7 +57,7 @@ export const metadata: Metadata = {
     "security compliance",
     "cyber threat protection",
     "information security",
-    "cybersecurity services"
+    "cybersecurity services",
   ],
   authors: [{ name: "Deciphi Cybersecurity Team" }],
   creator: "Deciphi",
@@ -60,7 +79,8 @@ export const metadata: Metadata = {
     url: "https://deciphi.com",
     siteName: "Deciphi Cybersecurity",
     title: "Deciphi Cybersecurity | Expert Cybersecurity Solutions in Qatar",
-    description: "Leading cybersecurity company in Qatar providing expert network security, data protection, and compliance solutions. Protect your business from cyber threats.",
+    description:
+      "Leading cybersecurity company in Qatar providing expert network security, data protection, and compliance solutions. Protect your business from cyber threats.",
     images: [
       {
         url: "/images/Rectangle42.png",
@@ -73,9 +93,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@deciphi",
-    creator: "@deciphi", 
+    creator: "@deciphi",
     title: "Deciphi Cybersecurity | Expert Solutions in Qatar",
-    description: "Leading cybersecurity company in Qatar. Expert network security, data protection, and compliance solutions.",
+    description:
+      "Leading cybersecurity company in Qatar. Expert network security, data protection, and compliance solutions.",
     images: ["/images/Rectangle42.png"],
   },
   alternates: {
@@ -89,27 +110,28 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Deciphi Cybersecurity",
-    description: "Leading cybersecurity company in Qatar providing expert network security, data protection, and compliance solutions.",
+    description:
+      "Leading cybersecurity company in Qatar providing expert network security, data protection, and compliance solutions.",
     url: "https://deciphi.com",
     logo: "https://deciphi.com/images/img_frame_38.svg",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
       areaServed: "QA",
-      availableLanguage: ["English", "Arabic"]
+      availableLanguage: ["English", "Arabic"],
     },
     address: {
       "@type": "PostalAddress",
       addressCountry: "QA",
-      addressRegion: "Qatar"
+      addressRegion: "Qatar",
     },
     sameAs: [
       "https://twitter.com/deciphi",
-      "https://linkedin.com/company/deciphi"
+      "https://linkedin.com/company/deciphi",
     ],
     serviceArea: {
       "@type": "Country",
-      name: "Qatar"
+      name: "Qatar",
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -120,27 +142,27 @@ export default function Home() {
           itemOffered: {
             "@type": "Service",
             name: "Network Security",
-            description: "Comprehensive network security solutions"
-          }
-        },
-        {
-          "@type": "Offer", 
-          itemOffered: {
-            "@type": "Service",
-            name: "Data Protection",
-            description: "Advanced data protection and privacy solutions"
-          }
+            description: "Comprehensive network security solutions",
+          },
         },
         {
           "@type": "Offer",
           itemOffered: {
-            "@type": "Service", 
+            "@type": "Service",
+            name: "Data Protection",
+            description: "Advanced data protection and privacy solutions",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
             name: "Penetration Testing",
-            description: "Professional penetration testing services"
-          }
-        }
-      ]
-    }
+            description: "Professional penetration testing services",
+          },
+        },
+      ],
+    },
   };
 
   return (
@@ -154,8 +176,8 @@ export default function Home() {
           <HeroSection />
         </Suspense>
         <AboutSection />
-        <ServicesSection />
         <ChooseUsSection />
+        <ServicesSection />
         <Solutions />
         <BlogSection />
       </main>
