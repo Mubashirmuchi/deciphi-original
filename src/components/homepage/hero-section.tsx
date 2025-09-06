@@ -32,10 +32,10 @@ const HeroSection = () => {
               type: "video",
               src: "https://videos.pexels.com/video-files/3147938/3147938-uhd_2560_1440_30fps.mp4",
             },
-            {
-              type: "image",
-              src: "/images/background.jpeg",
-            },
+            // {
+            //   type: "image",
+            //   src: "/images/background.jpeg",
+            // },
           ]}
         />
         <div className="absolute inset-0 bg-black opacity-20" />
