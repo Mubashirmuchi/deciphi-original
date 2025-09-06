@@ -117,26 +117,28 @@ const MobileNav = ({
             </motion.button>
 
             <nav className="space-y-3 mt-4">
-              {items.map((menu, index) => (
-                <motion.div
-                  key={menu.name}
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <Link href={menu.link}>
-                    {" "}
-                    <Button
-                      onClick={() => {
-                        setIsOpen(false);
-                      }}
-                      className="w-full text-left px-4 py-4  hover:bg-white/10 rounded-lg text-white/70 hover:text-white/90"
-                    >
-                      {menu.name}
-                    </Button>{" "}
-                  </Link>
-                </motion.div>
-              ))}
+              {[...items, { name: "Contact", link: "/contact" },{name:"Book a Call",link:"/book-call"}].map(
+                (menu, index) => (
+                  <motion.div
+                    key={menu.name}
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <Link href={menu.link}>
+                      {" "}
+                      <Button
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                        className="w-full text-left px-4 py-4  hover:bg-white/10 rounded-lg text-white/70 hover:text-white/90"
+                      >
+                        {menu.name}
+                      </Button>{" "}
+                    </Link>
+                  </motion.div>
+                )
+              )}
             </nav>
           </motion.div>
         )}
